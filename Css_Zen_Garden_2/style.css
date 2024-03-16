@@ -1,0 +1,200 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+/*google fonts - #20*/
+@import url('https://fonts.googleapis.com/css?family=Nova+Mono');
+@import url('https://fonts.googleapis.com/css?family=Kalam');
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+body {
+	line-height: 1.88889;
+	color: #555753; 
+	background: #000000; 
+	margin: 0; 
+	padding: 0;
+	}
+/*#13 add text shadow and change color and font*/
+p { 
+  font-family: 'Kalam', cursive;
+	margin-top: 0; 
+	text-align: justify;
+  text-shadow: 0 0 40px #0000ff;
+  color:white;
+	}
+/*#14, #15, and #16 add text shadow and font and transition*/
+h3, h1, h2{ 
+  font-family: 'Nova Mono', monospace;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #7D775C;
+  -webkit-transition: font-size 2s;
+  transition: font-size 2s;
+  text-shadow: 0 0 40px #00ff00;
+  color: white;
+	}
+/*#23 transition result*/
+h3:hover{
+  font-size: 40px;
+}
+/*#17, #18, and #19 and #24 add text shadow*/
+/*#17 also added font and changes size*/
+.sidebar li {
+  text-shadow: 0 0 40px #ff0000;
+  font-family: 'VT323', monospace;
+  font-size: 15px;
+}
+.supporting a, .intro a {
+  text-shadow: 0 0 40px #ffff00;
+}
+abbr {
+  text-shadow: 0 0 40px #FF0066;
+}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B7A5DF;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+/*#25, #26, #27 take away text decoration and change color*/
+a:hover, a:focus, a:active { 
+	text-decoration: none; 
+	color: white;
+	}
+abbr {
+	border-bottom: none;
+	}
+
+
+/* specific divs */
+/*#3 took out image here*/
+.page-wrapper { 
+	padding: 0 175px 0 110px;  
+	margin: 0; 
+	position: relative;
+	}
+
+.intro { 
+	min-width: 470px;
+	width: 100%;
+	}
+/*#28 took away h1 css*/
+/*#29 changes h2 css*/
+header h2 { 
+  float: right;
+	}
+header {
+	padding-top: 20px;
+	height: 87px;
+}
+/*#1 changed positioning*/
+.summary {
+	clear: both; 
+	margin: 20px 20px 20px 10px; 
+	}
+.summary p {
+	font: italic 1.1em/2.2 georgia; 
+	text-align: center;
+	}
+/*#4 added width to change layout*/
+.preamble {
+	clear: right; 
+	padding: 0px 10px 0 10px;
+  float: left;
+  width: 49%;
+	}
+.supporting {	
+	padding-left: 10px; 
+	margin-bottom: 40px;
+	}
+/*#5 changng the position*/
+#zen-explanation{
+  margin-top: 35px;
+}
+/*#6 changng the position*/
+#zen-participation{
+  width: 49%;
+}
+/*#7 changng the position*/
+#zen-benefits{
+  margin-left: 50.5%;
+  margin-top: -39.75%;
+  width: 49%;
+}
+/*#8 changng the position*/
+#zen-requirements{
+  margin-top: 24%;
+  text-align: center;
+}
+footer { 
+	text-align: center;
+	}
+footer a:link, footer a:visited { 
+	margin-right: 20px; 
+  text-shadow: 0 0 40px #FF6600;
+	}
+/*#30 changed left margin*/
+.sidebar {
+	margin-left: 599px; 
+	position: absolute; 
+	top: 0; 
+	right: 0;
+	}
+.sidebar .wrapper { 
+	font: 10px verdana, sans-serif; 
+	background-color: black;
+	padding: 10px; 
+	margin-top: 150px; 
+	width: 130px; 
+	}
+/*#21 changed css to just font size*/
+.sidebar h3.select { 
+  font-size: 20px;
+	}
+/*#22 changed css to just font size*/
+.sidebar h3.archives { 
+  font-size: 20px;
+	}
+.sidebar h3.resources {
+  font-size: 20px;
+	}
+/*#9 changed the text align*/
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+  text-align: center;
+	}
+/*#10 changed the text align*/
+.sidebar li {
+	line-height: 1.3em; 
+	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+  text-align: center;
+	}
+/*#11 change color and background color*/
+.sidebar li a:link {
+	color: white;
+  background-color: black;
+	}
+/*#12 change color and background color*/
+.sidebar li a:visited {
+	color: white;
+  background-color: black;
+	}
+/*#2 take away the extra 1*/
